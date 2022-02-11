@@ -1,0 +1,216 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+  min-width: 375px;
+  margin: 64.9px 0px;
+  background-color: rgba(223, 223, 238, 0.651);
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: center;
+}
+
+body main {
+  width: 328.9px;
+  height: 1616.5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: center;
+}
+
+body main header {
+  font-size: 1rem;
+  margin-bottom: 30.7px;
+  color: grey;
+}
+
+body main .period-toggle {
+  height: 60px;
+  width: 256.5px;
+  margin-bottom: 74.8px;
+  color: grey;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body main .period-toggle .switch {
+  position: relative;
+  display: inline-block;
+  width: 56px;
+  height: 32px;
+  background: linear-gradient(130deg, #a3a8f0, #696fdd);
+  border-radius: 20px;
+  transition: all 0.3s;
+  display: flex;
+  flex-direction: row;
+  justify-content: none;
+  align-items: center;
+}
+
+body main .period-toggle .switch:after {
+  content: "";
+  margin-left: 55%;
+  width: 24px;
+  height: 24px;
+  border-radius: 18px;
+  background-color: white;
+  top: 1px;
+  left: 1px;
+  transition: all 0.3s;
+}
+
+body main .period-toggle input[type="checkbox"]:checked + .switch:after {
+  transform: translateX(-30px);
+}
+
+body main .period-toggle input[type="checkbox"]:checked + .switch {
+  background-color: #7983ff;
+}
+
+body main .period-toggle .offscreen {
+  position: absolute;
+  left: -999999px;
+}
+
+body main .pricing-cards {
+  width: 328.9px;
+  gap: 29px;
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: center;
+}
+
+body main .pricing-cards h2 {
+  font-size: 1rem;
+}
+
+body main .pricing-cards h3 {
+  font-size: 3rem;
+  margin: 30.6px 0px;
+}
+
+body main .pricing-cards hr {
+  width: 275px;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(202, 202, 202, 0.363), rgba(202, 202, 202, 0.363), rgba(202, 202, 202, 0.363));
+}
+
+body main .pricing-cards h4 {
+  font-size: 0.8rem;
+  margin: 21px 0px;
+}
+
+body main .pricing-cards .white-text {
+  color: whitesmoke;
+}
+
+body main .pricing-cards .basic-card,
+body main .pricing-cards .professional-card,
+body main .pricing-cards .master-card {
+  transition: all 2s;
+  padding: 37.9px 0px 0px 0px;
+  height: 455.9px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: center;
+}
+
+body main .pricing-cards .professional-card {
+  background: linear-gradient(130deg, #a3a8f0, #696fdd);
+}
+
+body main .pricing-cards button {
+  height: 2.813rem;
+  width: 16.75rem;
+  margin: 25px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background: linear-gradient(130deg, #a3a8f0, #696fdd);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+body main .pricing-cards .lighter-color {
+  background: white;
+  color: #696fdd;
+}
+
+body main .pricing-cards button:hover {
+  background: white;
+  color: #9398eb;
+  border: solid #9398eb 1px;
+}
+
+body main .pricing-cards .lighter-color:hover {
+  background: #9398eb;
+  color: white;
+  border: solid white 1px;
+}
+
+body main .attribution {
+  font-size: 0.5rem;
+  letter-spacing: 7px;
+  margin-top: 5px;
+}
+
+@media screen and (min-width: 780px) {
+  body {
+    margin: unset;
+    width: 100vw;
+    height: 850px;
+    background-image: url(/src/images/bg-top.svg);
+    background-position: top;
+    background-position-x: 110%;
+    background-repeat: no-repeat;
+    background-size: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  body main {
+    width: 1055px;
+    height: 669px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: none;
+  }
+  body main .pricing-cards {
+    transition: all 2s;
+    width: 1055px;
+    height: 498px;
+    gap: 29px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  body main .pricing-cards .basic-card,
+  body main .pricing-cards .master-card {
+    transition: all 2s;
+    height: 457px;
+  }
+  body main .pricing-cards .professional-card {
+    background-color: #9398eb;
+    height: 100%;
+    padding-top: 58.8px;
+  }
+}
