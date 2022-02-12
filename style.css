@@ -14,6 +14,11 @@ body {
   flex-direction: column;
   justify-content: none;
   align-items: center;
+  background-image: url(./images/bg-top.svg);
+  background-repeat: no-repeat;
+  background-position-x: 270px;
+  background-position-y: -40px;
+  background-size: 400px;
 }
 
 body main {
@@ -103,7 +108,12 @@ body main .pricing-cards hr {
   width: 275px;
   border: 0;
   height: 1px;
-  background-image: linear-gradient(to right, rgba(202, 202, 202, 0.363), rgba(202, 202, 202, 0.363), rgba(202, 202, 202, 0.363));
+  background-image: linear-gradient(
+    to right,
+    rgba(202, 202, 202, 0.363),
+    rgba(202, 202, 202, 0.363),
+    rgba(202, 202, 202, 0.363)
+  );
 }
 
 body main .pricing-cards h4 {
@@ -166,8 +176,9 @@ body main .pricing-cards .lighter-color:hover {
 
 body main .attribution {
   font-size: 0.5rem;
-  letter-spacing: 7px;
+  letter-spacing: 1px;
   margin-top: 5px;
+  transition: 2s;
 }
 
 @media screen and (min-width: 780px) {
@@ -212,5 +223,9 @@ body main .attribution {
     background-color: #9398eb;
     height: 100%;
     padding-top: 58.8px;
+  }
+  body main .attribution {
+    letter-spacing: 7px;
+    transition: 2s;
   }
 }
